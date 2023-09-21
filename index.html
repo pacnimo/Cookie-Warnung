@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webseite Cookie Warnung html Code</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      color: darkskyblue;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 20px;
+    }
+    .code-section {
+      background-color: #333;
+      color: lightskyblue;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+    #cookie-warnung {
+      background-color: lightskyblue;
+      color: darkblue;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      font-size: 1em;
+    }
+    @media only screen and (max-width: 600px) {
+      #cookie-warnung {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>So fügen Sie Ihrer Webseite eine Cookie-Warnung hinzu</h1>
+    <h2>HTML für Cookie-Warnung</h2>
+    <p>Das ist das benötigte HTML, um die Cookie-Warnung hinzuzufügen.</p>
+    <pre class="code-section">
+      <code>
+        &lt;div id="cookie-warnung"&gt;
+          &lt;p&gt;Wir verwenden Cookies, um Ihre Erfahrung zu verbessern...&lt;/p&gt;
+          &lt;button onclick="akzeptiereCookies()"&gt;Akzeptieren&lt;/button&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+    <h2>JavaScript für Cookie-Warnung</h2>
+    <p>Dieser JavaScript-Code lässt die Warnung verschwinden, wenn Benutzer Cookies akzeptieren.</p>
+    <pre class="code-section">
+      <code>
+        &lt;script&gt;
+          if (localStorage.getItem('cookiesAkzeptiert') === 'true') {
+            document.getElementById('cookie-warnung').style.display = 'none';
+          }
+          function akzeptiereCookies() {
+            localStorage.setItem('cookiesAkzeptiert', 'true');
+            document.getElementById('cookie-warnung').style.display = 'none';
+          }
+        &lt;/script&gt;
+      </code>
+    </pre>
+  </div>
+  <div id="cookie-warnung">
+    <p>Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung dieser Website stimmen Sie unserer Cookie-Richtlinie zu. <button onclick="akzeptiereCookies()">Akzeptieren</button></p>
+  </div>
+  <script>
+    if (localStorage.getItem('cookiesAkzeptiert') === 'true') {
+      document.getElementById('cookie-warnung').style.display = 'none';
+    }
+    function akzeptiereCookies() {
+      localStorage.setItem('cookiesAkzeptiert', 'true');
+      document.getElementById('cookie-warnung').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+
