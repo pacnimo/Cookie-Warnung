@@ -21,13 +21,8 @@ Sobald der Code in Ihre Webseite integriert ist, wird die Cookie-Warnung am unte
 
 ## Autor
 
-[Dein Name](https://github.com/pacnimo)
+[Pacnimo](https://github.com/pacnimo)
 
 ## Lizenz
 
 Dieses Projekt steht unter der MIT-Lizenz - siehe die [LICENSE.md](LICENSE.md) Datei für Details.
-
----
-
-Für weitere Informationen, bitte das [Wiki](https://github.com/pacnimo/Cookie-Warnung/wiki) besuchen.
-
